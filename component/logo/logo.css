@@ -1,0 +1,18 @@
+ .logo-holder {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     width: 80px;
+     height: 80px;
+    /* background-color: blue;*/
+     position: relative;
+     border-radius: 20px;
+ }
+
+ .logo-dot {
+     position: absolute;
+     top: -50px;
+     left: 20px;
+
+ }

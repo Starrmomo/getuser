@@ -1,0 +1,24 @@
+ .login-container{
+    display: flex;
+    justify-content: center;
+    border:1px solid #F3F4F6;
+    width: 400px;
+    height: 36px;
+    background-color:#F3F4F6 ;
+    border-radius: 12px;
+ }
+
+.login-button button {
+background-color: white;
+height: 35px;
+}
+
+button{
+width: 200px;
+height: 30px;
+border-radius: 10px;
+background-color:#F3F4F6 ;
+border: 1px solid#F3F4F6  ;
+font-weight: 500;
+}
+

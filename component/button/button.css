@@ -1,0 +1,38 @@
+ .button-container{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+ }
+
+ .first-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 48px;
+    border-radius: 10px;
+    gap: 12px;
+    border: 2px solid #E5E7EB  ;
+    background-color:#F9FAFB ;
+ }
+
+ .second-button{
+    width: 196px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #EFAF00;
+    border: none;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
