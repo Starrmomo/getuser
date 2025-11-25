@@ -108,6 +108,7 @@ padding-top: 40px;
 }
 .input-container input{
   border-radius: 10px;
+  width: 90%;
 border:1px solid  #e9edf5 ;
 }
 
@@ -142,7 +143,9 @@ font-size: small;
 
 
 
-
+.lock-input.lock-img input::placeholder{
+  
+}
 
 
 

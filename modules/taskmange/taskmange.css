@@ -1,0 +1,113 @@
+ body{
+    
+    
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #f8f9fc;
+    
+}
+
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color:#F9FAFB ;
+}
+    
+.top-tabcontain{
+    background-color: #F9FAFB;
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid #E2E8F0  ;
+}
+
+.outercard{
+    border-radius: 5px;
+    border: 1px solid #E2E8F0  ;
+
+}
+.innercard{
+    background-color: rgb(112, 13, 13);
+}
+
+
+
+.header{
+
+}
+
+
+.header h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    
+}
+
+.header p {
+    color: gray;
+    line-height: 0px;
+}
+
+.top-tabs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #2563eb;
+    color: white;
+}
+
+.stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.stat h3 {
+    font-size: 24px;
+    color: #2563eb;
+}
+
+.task-area {
+    position: relative;
+}
+
+.add-task {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.empty-box {
+    margin-top: 10px;
+    height: 250px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    background: #f9fbff;
+    display: flex;
+    flex-direction: column;
+    justify-content: ce
+}

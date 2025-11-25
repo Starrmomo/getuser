@@ -1,0 +1,151 @@
+ .content {
+     flex: 1;
+     padding: 30px;
+     overflow-y: auto;
+     background-color: #F9FAFB;
+ }
+
+ .greeting h1 {
+     margin: 0;
+ }
+
+ .stats {
+     margin-top: 25px;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 20px;
+ }
+
+ .statimg {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .stat-card {
+     background: white;
+     padding: 20px;
+     border-radius: 12px;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+     line-height: 10px;
+ }
+
+ .stat-card .value {
+     font-size: 24px;
+     font-weight: bold;
+ }
+
+ .recent-tasks1 {
+     margin-top: 20px;
+     width: 50%;
+     height: 350px;
+     border-radius: 10px;
+     background-color: #FFFFFF;
+ }
+
+ .recent-tasks2 {
+     text-align: center;
+     margin-top: 50px;
+ }
+
+ .recent-clock {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     margin-left: 20px;
+ }
+
+ .quick-img {
+     display: flex;
+     align-items: center;
+     margin-left: 20px;
+     gap: 10px;
+ }
+
+ .recent-tasks {}
+
+
+ .quick-actions1 {
+     margin-top: 20px;
+     width: 50%;
+     height: 350px;
+     border-radius: 10px;
+     background-color: #FFFFFF;
+ }
+
+ .quick-actions {}
+
+ .last-page {
+     display: flex;
+     gap: 30px;
+ }
+
+ .grid1 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 35px;
+     width: 35px;
+     background-color: #DBEAFE;
+     border-radius: 10px;
+ }
+
+ .grid1 {
+     position: absolute;
+     top: 16px;
+     left: 40px;
+ }
+
+ .grid2 {
+     position: absolute;
+     top: 16px;
+     left: 40px;
+     background-color: #CEFAFE;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 35px;
+     width: 35px;
+     border-radius: 10px;
+ }
+
+ .grid3 {
+     position: absolute;
+     top: 16px;
+     left: 40px;
+     background-color: #DBFCE7;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 35px;
+     width: 35px;
+
+     border-radius: 10px;
+ }
+
+ .quick-grid {
+     margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     position: relative;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+
+ .action-btn {
+     padding: 15px;
+     background:#F9FAFB ;
+     border-radius: 12px;
+     border: none;
+     cursor: pointer;
+     text-align: left;
+     padding-left: 70px;
+     line-height: 10px;
+ }
+
+ .action-btn:hover{
+    background-color:#06B6D4 ;
+    color: black;
+ }
+
