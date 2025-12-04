@@ -14,55 +14,62 @@
 <body>
     <div class="dashboard">
 
+		<div class="dashboard">
+			<aside class="sidebar">
+				<div class="logo">
+					<div class="checkcolor switch ">
+						<img src="../../assets/images/checkbox.svg" width="25px" height="25px">
+					</div>
+					<h4 class="switch">TaskMaster</h4>
+					<img id="leftlogo" src="../../assets/images/left.svg" width="5px" height="5px">
+				</div>
 
-        <aside class="sidebar">
-            <div class="logo">
-                <div class="checkcolor">
-                    <img src="../../assets/images/checkbox.svg" width="25px" height="25px">
-                </div>
-                <h4>TaskMaster</h4>
-                <img id="leftlogo" src="../../assets/images/left.svg" width="5px" height="5px">
-            </div>
+				<div class="user-profile">
+					<div class="avatar">M</div>
+					<div class="user-info switch">
+						<h5>Momoh gbenuade</h5>
+						<p>momohgbenuade@gmail.com</p>
+					</div>
+				</div>
+				<div class="menu1">
+					<nav class="menu">
+						<div class="menu__navlist">
+							<img src="../../assets/images/dash.svg" width="20px" height="20px">
+							<p class="active switch">Dashboard</p>
+						</div>
+						<div class="menu__navlist">
+							<img src="../../assets/images/check.svg" width="20px" height="20px">
+							<p class="switch">Tasks</p>
+						</div>
+						<div class="menu__navlist">
+							<img src="../../assets/images/person copy.svg" width="20px" height="20px">
+							<p class="switch">Community</p>
+						</div>
+						<div class="menu__navlist">
+							<img src="../../assets/images/dollar copy.svg" width="20px" height="20px">
+							<p class="switch">Expenses</p>
+						</div>
+						<div class="menu__navlist">
+							<img src="../../assets/images/note copy.svg" width="20px" height="20px">
+							<p class="switch">Notes</p>
+						</div>
+						<div class="menu__navlist">
+							<img src="../../assets/images/setting.svg" width="20px" height="20px">
+							<p class="switch">Settings</p>
+						</div>
+					</nav>
+				</div>
+				<div class="footer">
+					<div id="logout" class="asidefooter">
+						<img src="../../assets/images/logout.svg" width="15px" height="15px">
+						<button class="logout-btn switch"> Logout</button>
+					</div>
+				</div>
+			</aside>
+		</div>
 
-            <div class="user-profile">
-                <div class="avatar">M</div>
-                <div class="user-info">
-                    <h5>Momoh gbenuade</h5>
-                    <p>momohgbenuade@gmail.com</p>
-                </div>
-            </div>
-            <div class="menu1">
-                <nav class="menu">
-                    <div class="sidebarimg1">
-                        <img src="../../assets/images/dash.svg" width="20px" height="20px"> <a href="#"
-                            class="active">Dashboard</a>
-                    </div>
-                    <div class="sidebarimg1">
-                        <img src="../../assets/images/check.svg" width="20px" height="20px"> <a href="#">Tasks</a>
-                    </div>
-                    <div class="sidebarimg1">
-                        <img src="../../assets/images/person copy.svg" width="20px" height="20px">
-                        <a href="#">Community</a>
-                    </div>
-                    <div class="sidebarimg1">
-                        <img src="../../assets/images/dollar copy.svg" width="20px" height="20px"> <a
-                            href="#">Expenses</a>
-                    </div>
-                    <div class="sidebarimg1">
-                        <img src="../../assets/images/note copy.svg" width="20px" height="20px"> <a href="#">Notes</a>
-                    </div>
-                    <div class="sidebarimg1">
-                        <img src="../../assets/images/setting.svg" width="20px" height="20px"> <a href="#">Settings</a>
-                    </div>
-                </nav>
-            </div>
-            <div class="footer">
-                <div class="asidefooter">
-                    <img src="../../assets/images/logout.svg" width="15px" height="15px">
-                    <button class="logout-btn"> Logout</button>
-                </div>
-            </div>
-        </aside>
+
+
 
 
 
@@ -96,7 +103,7 @@
                                         <div class="summaryimg">
                                             <img class="chartimg" src="../../assets/images/chart.svg" width="18px"
                                                 height="18px">
-                                            <button class="tab">AI Summary</button>
+                                            <button id="aitab" class="tab">AI Summary</button>
                                         </div>
                                     </div>
                                 </div>
@@ -114,7 +121,8 @@
                                 </div>
                             </div>
                             <div class="task-area">
-                                <button class="add-task">+ Add Task</button>
+                                <label for="modalToggle" class="open-modal-btn add-task  ">+ Add Task</label>
+                               <!-- <button class="  ">+ Add Task</button>-->
 
                                 <div class="empty-box">
                                     <div>
@@ -130,7 +138,58 @@
             </div>
         </main>
 
+        <!-- Hidden Checkbox Toggle -->
+        <input type="checkbox" id="modalToggle" class="modal-checkbox">
+
+        <!-- Button to open modal -->
+    <!-- <label for="modalToggle" class="open-modal-btn">+ Add Task</label>-->
+
+        <!-- Modal -->
+        <div class="modal-container">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3><img src="../../assets/images/sparkle copy.svg"> Create New Task</h3>
+
+                    <!-- Close Button -->
+                    <label for="modalToggle" class="close-btn">×</label>
+                </div>
+
+                <p class="subtext">Add a new task to your productivity list</p>
+
+                <label>Title</label>
+                <input class="task-input" type="text" placeholder="Enter task title">
+
+                <label>Description</label>
+                <textarea class="textarea" placeholder="Add task details..."></textarea>
+
+                <div class="inputs-row">
+                    <div class="input-group">
+                        <label>Priority</label>
+                        <select>
+                            <option>Low</option>
+                            <option selected>Medium</option>
+                            <option>High</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Due Date</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <label for="modalToggle" class="cancel">Cancel</label>
+                    <label for="modalToggle" class="create">Create Task</label>
+                </div>
+
+            </div>
+        </div>
+
+
     </div>
+<script src="../../component/sidebar/sidebar.js"></script>
+<script src="../taskmange/taskmange.js"></script>
 
 </body>
 

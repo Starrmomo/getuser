@@ -25,57 +25,62 @@
     <body>
         <div class="dashboard">
 
+		<div class="dashboard">
+			<aside class="sidebar">
+				<div class="logo">
+					<div class="checkcolor switch ">
+						<img src="../../assets/images/checkbox.svg" width="25px" height="25px">
+					</div>
+					<h4 class="switch">TaskMaster</h4>
+					<img id="leftlogo" src="../../assets/images/left.svg" width="5px" height="5px">
+				</div>
 
-            <aside class="sidebar">
-                <div class="logo">
-                    <div class="checkcolor">
-                        <img src="../../assets/images/checkbox.svg" width="25px" height="25px">
-                    </div>
-                    <h4>TaskMaster</h4>
-                    <img id="leftlogo" src="../../assets/images/left.svg" width="5px" height="5px">
-                </div>
+				<div class="user-profile">
+					<div class="avatar">M</div>
+					<div class="user-info switch">
+						<h5>Momoh gbenuade</h5>
+						<p>momohgbenuade@gmail.com</p>
+					</div>
+				</div>
+				<div class="menu1">
+					<nav class="menu">
+						<div class="menu__navlist">
+							<img src="../../assets/images/dash.svg" width="20px" height="20px">
+							<p class="active switch">Dashboard</p>
+						</div>
+						<div class="menu__navlist">
+							<img src="../../assets/images/check.svg" width="20px" height="20px">
+							<p class="switch">Tasks</p>
+						</div>
+						<div class="menu__navlist">
+							<img src="../../assets/images/person copy.svg" width="20px" height="20px">
+							<p class="switch">Community</p>
+						</div>
+						<div class="menu__navlist">
+							<img src="../../assets/images/dollar copy.svg" width="20px" height="20px">
+							<p class="switch">Expenses</p>
+						</div>
+						<div class="menu__navlist">
+							<img src="../../assets/images/note copy.svg" width="20px" height="20px">
+							<p class="switch">Notes</p>
+						</div>
+						<div class="menu__navlist">
+							<img src="../../assets/images/setting.svg" width="20px" height="20px">
+							<p class="switch">Settings</p>
+						</div>
+					</nav>
+				</div>
+				<div class="footer">
+					<div id="logout" class="asidefooter">
+						<img src="../../assets/images/logout.svg" width="15px" height="15px">
+						<button class="logout-btn switch"> Logout</button>
+					</div>
+				</div>
+			</aside>
+		</div>
 
-                <div class="user-profile">
-                    <div class="avatar">M</div>
-                    <div class="user-info">
-                        <h5>Momoh gbenuade</h5>
-                        <p>momohgbenuade@gmail.com</p>
-                    </div>
-                </div>
-                <div class="menu1">
-                    <nav class="menu">
-                        <div class="sidebarimg1">
-                            <img src="../../assets/images/dash.svg" width="20px" height="20px"> <a href="#"
-                                class="active">Dashboard</a>
-                        </div>
-                        <div class="sidebarimg1">
-                            <img src="../../assets/images/check.svg" width="20px" height="20px"> <a href="#">Tasks</a>
-                        </div>
-                        <div class="sidebarimg1">
-                            <img src="../../assets/images/person copy.svg" width="20px" height="20px">
-                            <a href="#">Community</a>
-                        </div>
-                        <div class="sidebarimg1">
-                            <img src="../../assets/images/dollar copy.svg" width="20px" height="20px"> <a
-                                href="#">Expenses</a>
-                        </div>
-                        <div class="sidebarimg1">
-                            <img src="../../assets/images/note copy.svg" width="20px" height="20px"> <a
-                                href="#">Notes</a>
-                        </div>
-                        <div class="sidebarimg1">
-                            <img src="../../assets/images/setting.svg" width="20px" height="20px"> <a
-                                href="#">Settings</a>
-                        </div>
-                    </nav>
-                </div>
-                <div class="footer">
-                    <div class="asidefooter">
-                        <img src="../../assets/images/logout.svg" width="15px" height="15px">
-                        <button class="logout-btn"> Logout</button>
-                    </div>
-                </div>
-            </aside>
+
+
 
 
 
@@ -88,7 +93,7 @@
                         <div class="kk">
                             <div class="header">
                                 <div class="checkcolor">
-                                    <img src="../../assets/images/checkbox.svg" width="25px" height="25px">
+                                    <img src="../../assets/images/person copy3.svg" width="25px" height="25px">
                                 </div>
                                 <div>
                                     <h4>Community Board</h4>
@@ -102,20 +107,23 @@
                                     <div class="top-tabs">
                                         <div class="top-tabs2">
                                             <div class="help-container">
-                                               <input type="text" placeholder="share an update ask for help or celebrate a win mention @consq to get ai help"> 
-
+                                                <div class="USER">MG</div>
+                                                
+                                                    <input type="text"
+                                                        placeholder="Share an update, ask for help, or celebrate a win... (Mention @comsq to get AI help)">
+                                                
                                             </div>
 
 
                                         </div>
                                     </div>
                                     <div class="task-area">
-                                        <button class="add-task">+ post</button>
+                                        <button class="add-task"> <img src="../../assets/images/send copy.svg" width="15px" height="15px"> post</button>
 
                                         <div class="empty-box">
                                             <div>
-                                                <img src="../../assets/images/circle.svg" width="50px" height="50px">
-                                                
+                                                <img src="../../assets/images/message.svg" width="50px" height="50px">
+
                                                 <p>No posts yet. Be the first to share something!</p>
                                             </div>
                                         </div>
@@ -131,6 +139,7 @@
     </body>
 
     </html>
+    <script src="../../component/sidebar/sidebar.js"></script>
 </body>
 
 </html>

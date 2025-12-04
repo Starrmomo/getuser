@@ -22,14 +22,11 @@
      background-color: #F9FAFB;
  }
 
- .top-tabcontain {
-     
+ .top-tabcontain {}
 
- }
-
- .secondtab{
-    background-color:#FFFFFF;
-    padding-top: 1px;
+ .secondtab {
+     background-color: #FFFFFF;
+     padding-top: 1px;
  }
 
  .outercard {
@@ -68,34 +65,37 @@
      margin-bottom: 20px;
      padding-left: 30px;
  }
-.top-tabs2{
-background-color:#F3F4F6 ;
-border-radius: 10px;
-padding: 5px;
-width: 250px;
-align-items: center;
 
-display: flex;
-}
- .markimg{
-    position: absolute;
-    top: 8px;
-    left: 10px;
+ .top-tabs2 {
+     background-color: #F3F4F6;
+     border-radius: 10px;
+     padding: 5px;
+     width: 250px;
+     align-items: center;
+
+     display: flex;
  }
-.chartimg{
-    position: absolute;
-    top: 8px;
-    left: 20px;
-}
+
+ .markimg {
+     position: absolute;
+     top: 8px;
+     left: 10px;
+ }
+
+ .chartimg {
+     position: absolute;
+     top: 8px;
+     left: 20px;
+ }
 
 
-.tabtive{
-    position: relative;
-}
+ .tabtive {
+     position: relative;
+ }
 
-.summaryimg{
-    position: relative;
-}
+ .summaryimg {
+     position: relative;
+ }
 
  .tab {
      background: #F3F4F6;
@@ -108,31 +108,31 @@ display: flex;
  }
 
  .tab-active {
-    
-    border: 1px solid #e5e7eb;
+
+     border: 1px solid #e5e7eb;
      padding: 8px 16px;
      border-radius: 6px;
      cursor: pointer;
      border: none;
-     background:#FFFFFF ;
+     background: #FFFFFF;
      color: black;
      padding-left: 35px;
  }
 
- .stats{
-     
+ .stats {
+     display: flex;
      gap: 40px;
      margin-bottom: 20px;
      padding-left: 30px;
-     
-     
+
+
  }
 
- .divider{
-    border-right: 1px solid#E5E7EB ;
-    margin-top: 23px;
-    margin-bottom: 23px;
-    
+ .divider {
+     border-right: 1px solid#E5E7EB;
+     margin-top: 23px;
+     margin-bottom: 23px;
+
  }
 
 
@@ -143,7 +143,8 @@ display: flex;
      text-align: center;
      line-height: 0px;
  }
-.stat2 h3 {
+
+ .stat2 h3 {
      font-size: 24px;
      color: #00A63E;
      text-align: center;
@@ -155,11 +156,10 @@ display: flex;
      position: relative;
      bottom: 20px;
      border-top-left-radius: 30px;
-     
+
  }
- .stats2{
-    
- }
+
+ .stats2 {}
 
  .add-task {
      position: absolute;
@@ -178,7 +178,7 @@ display: flex;
      height: 170px;
      border: 2px dashed #cbd5e1;
      border-radius: 10px;
-     background:#F2F6FE ;
+     background: #F2F6FE;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -186,8 +186,138 @@ display: flex;
      margin-right: 25px;
      text-align: center;
  }
-.empty-box p{
-color:#64748B ;
+
+ .empty-box p {
+     color: #64748B;
+ }
+
+ .modal-checkbox {
+     display: none;
+ }
+
+ .modal-container {
+     position: fixed;
+     inset: 0;
+     background: rgba(0, 0, 0, 0.4);
+     display: none;
+     justify-content: center;
+     align-items: center;
+     
+ }
+
+ .modal-checkbox:checked~.modal-container {
+     display: flex;
+ }
+
+ .modal {
+     background:#f8f9fa ;
+     width: 430px;
+     padding-left: 24px;
+     padding-right: 45px;
+     padding-bottom: 10px;
+     border-radius: 12px;
+     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+     animation: fadeIn .25s ease-in-out;
+ }
+
+ .modal-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .close-btn {
+     font-size: 22px;
+     cursor: pointer;
+     background: none;
+     border: none;
+ }
+
+ .subtext {
+     font-size: 14px;
+     color: #555;
+     margin-bottom: 14px;
+ }
+
+ label {
+     font-size: 14px;
+     margin-top: 10px;
+     display: block;
+    
+ }
+
+ input,
+ textarea,
+ select {
+     width: 100%;
+     padding: 10px;
+     margin-top: 6px;
+     border-radius: 6px;
+     border: 1px solid #d0d0d0;
+ }
+
+ textarea {
+     height: 80px;
+     resize: none;
+ }
+
+ .inputs-row {
+     display: flex;
+     gap: 12px;
+ }
+
+ .input-group {
+     flex: 1;
+     
+ }
+
+ .action-buttons {
+     display: flex;
+     justify-content: flex-end;
+     gap: 8px;
+     margin-top: 20px;
+ }
+
+ .cancel {
+     background: #eee;
+     padding: 10px 16px;
+     border-radius: 6px;
+     cursor: pointer;
+ }
+
+ .create {
+     background: #3b82f6;
+     color: #fff;
+     padding: 10px 16px;
+     border-radius: 6px;
+     cursor: pointer;
+ }
+
+ .open-modal-btn {
+     padding: 10px 16px;
+     background: #3b82f6;
+     color: #fff;
+     border-radius: 6px;
+     cursor: pointer;
+     display: inline-block;
+ }
+
+.task-input{
+    border: none;
+    background-color:#FFFFFF ;
 }
 
 
+.textarea{
+    border: none;
+    background-color: #FFFFFF;
+}
+
+
+.input-group select{
+    background-color: #FFFFFF;
+}
+
+.input-group option :hover{
+    background: #00A63E;
+}
